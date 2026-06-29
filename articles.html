@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Academic Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
 
 <header>
     <div class="container">
-     
-
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="articles.html">Journal articles</a>
-            <a href="presentations.html">Conference presentations</a>
-            <a href="outreach.html">Extension and Outreach</a>
-            <a href="projects.html">Projects</a>
-            <a href="gallery.html">Gallery</a>
-        </nav>
-           <h1>Journal articles: Behind the manuscripts</h1>
+        <div id="navbar"></div>
+        <h1>Behind the manuscripts</h1>
     </div>
 </header>
+
+<script src="/assets/js/navbar.js"></script>
 
 <section class="about-section">
 <h2>Quantifying modern apple orchard systems and management effects on weather variables in the cold semi-arid climatic zone
@@ -31,9 +24,9 @@
 </h2>
 <div class="two_col">
       <div class="two_col_left">
-        <img src="assets/OE/KY_weather_maintenance.JPEG" alt="Weather station maintenance" class="slide">
-        <img src="assets/OE/OE_Fig1.png" alt="Weather station locations and apple orchard training systems" class="slide">
-        <img src="assets/OE/OE_Fig2.png" alt="Open-field and in-orchard weather stations" class="slide">
+        <img src="images/OE/KY_weather_maintenance.JPEG" alt="Weather station maintenance" class="slide">
+        <img src="images/OE/OE_Fig1.png" alt="Weather station locations and apple orchard training systems" class="slide">
+        <img src="images/OE/OE_Fig2.png" alt="Open-field and in-orchard weather stations" class="slide">
     </div>
 
     <div class="two_col_right">
@@ -48,9 +41,9 @@
 </h2>
 <div class="two_col">
       <div class="two_col_left">
-        <img src="assets/JWC/JWC_pic1.png" alt="Land Use Land Cover Map" class="slide">
-        <img src="assets/JWC/JWC_pic2.png" alt="Map" class="slide">
-        <img src="assets/JWC/JWC_pic3.png" alt="POD" class="slide">
+        <img src="images/JWC/JWC_pic1.png" alt="Land Use Land Cover Map" class="slide">
+        <img src="images/JWC/JWC_pic2.png" alt="Map" class="slide">
+        <img src="images/JWC/JWC_pic3.png" alt="POD" class="slide">
     </div>
 
     <div class="two_col_right">
@@ -63,7 +56,7 @@
 
 
 </section>
-<script src="script.js"></script>
+<script src="/assets/js/script.js"></script>
 
 </body>
 </html>

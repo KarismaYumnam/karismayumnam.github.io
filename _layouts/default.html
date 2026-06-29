@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
 
 <header>
     <div class="container">
-        <div id="navbar"></div>
-        <h1>Other than articles</h1>
+        {% include navbar.html %}
+        <h1>Karisma Yumnam</h1>
     </div>
 </header>
 
-<script src="/assets/js/navbar.js"></script>
+{{ content }}
 
-<!-- Copy paste above this line. Below are the contents of the pages -->
-<p>Yes 
-</p>
+</body>
+</html>

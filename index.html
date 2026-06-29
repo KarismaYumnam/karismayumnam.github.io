@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Academic Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
 
 <header>
     <div class="container">
-     
-
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="articles.html">Journal articles</a>
-            <a href="presentations.html">Conference presentations</a>
-            <a href="outreach.html">Extension and Outreach</a>
-            <a href="projects.html">Projects</a>
-            <a href="gallery.html">Gallery</a>
-        </nav>
-           <h1>Karisma Yumnam</h1>
+        <div id="navbar"></div>
+        <h1>Karisma Yumnam</h1>
     </div>
 </header>
+
+<script src="/assets/js/navbar.js"></script>
+
 
 <section class="about-section">
     <div class="about-content">
 
         <div class="profile-image">
-            <img src="assets/KY_pic.jpg" alt="Profile">
+            <img src="images/KY_pic.jpg" alt="Profile">
         </div>
 
         <div class="bio">
@@ -46,7 +40,7 @@
 
             <p style="text-align: justify;">
             In personal life, she is a multi-faceted individual with diverse pursuits.
-            She is a constantly imporving tennis player (NTRP rating: 3.0-3.5), watercolor artist and a 700+ Chess player.
+            She is a constantly improving tennis player (NTRP rating: 3.0-3.5), watercolor artist and a 700+ Chess player.
             She enjoys biking, hiking, reading, gardening and ocasionally cooking new recipes!
       
             </p>
