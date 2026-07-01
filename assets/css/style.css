@@ -25,6 +25,7 @@ header {
     color: white;
     padding: 20px 0;
 }
+
 header h1 {
     font-size: clamp(24px, 6vw, 28px);
     font-weight: 400;
@@ -39,15 +40,16 @@ header h1 {
 }
 
 .title_container {
-    background: rgb(174, 210, 231);   /* translucent white */
+    background: rgb(174, 210, 231);
     padding: 30px;
     border-radius: 8px;
-    backdrop-filter: blur(6px);             /* optional glass effect */
-    -webkit-backdrop-filter: blur(6px);     /* Safari */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     width: 100%;
 }
+
 .cyan_container {
-    background: rgba(123, 241, 243, 0.529);   /* translucent white */
+    background: rgba(123, 241, 243, 0.529);
     padding: 5px;
     border-radius: 4px;
     width: 100%;
@@ -59,6 +61,7 @@ header h1 {
     font-weight: 400;
     color: rgb(87, 32, 240);
 }
+
 nav {
     display: flex;
     gap: 14px 22px;
@@ -124,8 +127,6 @@ nav a:hover {
     font-weight: 700;
 }
 
-
-
 /* Two-column section */
 
 .two_col {
@@ -144,15 +145,18 @@ nav a:hover {
     max-width: 100%;
 }
 
-/* Use this only for the image/slideshow side */
+/* Image/slideshow side */
+
 .two_col_image {
     position: relative;
     width: 100%;
+    max-width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
 }
 
 /* Normal image should show */
+
 .two_col_image img {
     width: 100%;
     height: 100%;
@@ -160,10 +164,14 @@ nav a:hover {
     display: block;
 }
 
-/* Only slideshow images should be hidden by default */
+/* Slideshow images */
+
 .two_col_image .slide {
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -171,6 +179,7 @@ nav a:hover {
 .two_col_image .slide.active {
     opacity: 1;
 }
+
 /* Text side */
 
 .two_col_text {
@@ -178,6 +187,7 @@ nav a:hover {
     max-width: 100%;
     font-size: clamp(16px, 3vw, 18px);
 }
+
 p {
     font-size: clamp(16px, 3vw, 18px);
     margin-bottom: 20px;
@@ -239,10 +249,27 @@ p {
     .two_col_text {
         width: 100%;
         max-width: 100%;
+        min-width: 0;
+    }
+
+    .two_col_left,
+    .two_col_right {
+        flex: none;
     }
 
     .two_col_image {
+        display: block;
+        position: relative;
         aspect-ratio: 4 / 3;
+        min-height: 220px;
+        overflow: hidden;
+    }
+
+    .two_col_image img,
+    .two_col_image .slide {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
@@ -280,18 +307,12 @@ p {
     }
 
     .two_col_image {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 4 / 3;
+        min-height: 200px;
     }
 }
 
-
 /* Table CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .page-container {
     width: 82%;
@@ -301,10 +322,10 @@ p {
 }
 
 .page-title {
-    font-size: clamp(33px, 3vw, 25px);
+    font-size: clamp(25px, 3vw, 33px);
     color: rgb(87, 32, 240);
     font-weight: 800;
-    margin: 0 0 0 px;
+    margin: 0;
     letter-spacing: -1px;
 }
 
