@@ -19,10 +19,11 @@ img {
 }
 
 /* Header */
+/* #C8A2C8; */
 
 header {
-    background: #046556;
-    color: white;
+    background: #babaf4; 
+    color: #3E2723;
     padding: 20px 0;
 }
 
@@ -30,7 +31,7 @@ header h1 {
     font-size: clamp(24px, 6vw, 28px);
     font-weight: 400;
     margin-bottom: 12px;
-    color: rgb(233, 236, 145);
+    color: rgb(87, 32, 240);
 }
 
 .container {
@@ -39,14 +40,7 @@ header h1 {
     margin: auto;
 }
 
-.title_container {
-    background: rgb(174, 210, 231);
-    padding: 30px;
-    border-radius: 8px;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    width: 100%;
-}
+
 
 .cyan_container {
     background: rgba(123, 241, 243, 0.529);
@@ -58,7 +52,7 @@ header h1 {
 .t1 {
     text-align: center;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 800;
     color: rgb(87, 32, 240);
 }
 
@@ -69,7 +63,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #3E2723;
     text-decoration: none;
     font-size: clamp(17px, 4vw, 25px);
 }
@@ -191,6 +185,18 @@ nav a:hover {
 p {
     font-size: clamp(16px, 3vw, 18px);
     margin-bottom: 20px;
+}
+
+.pdf-viewer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.pdf-viewer iframe {
+    width: 100%;
+    height: 60vh;
+    border: none;
 }
 
 /* Tablet */
@@ -322,7 +328,7 @@ p {
 }
 
 .page-title {
-    font-size: clamp(25px, 3vw, 33px);
+    font-size: clamp(20px, 3vw, 30px);
     color: rgb(87, 32, 240);
     font-weight: 800;
     margin: 0;
@@ -342,7 +348,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     background: #f8f8f8;
-    font-size: clamp(12px, 2.5vw, 22px);
+    font-size: clamp(10px, 2.5vw, 20px);
 }
 
 th,
@@ -374,11 +380,11 @@ a:hover {
 }
 
 /* Footer CSS */
-
+ /* #babaf4; */
 footer {
-    background: #456fc4;
-    color: white;
-    padding: 42px 0;
+    background: #C8A2C8; 
+    color: #3E2723;
+    padding: 5px 0;
 }
 
 .footer-container {
@@ -388,11 +394,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 5px;
 }
 
 .footer-container p {
-    font-size: clamp(18px, 3vw, 24px);
+    font-size: clamp(10px, 3vw, 20px);
 }
 
 .footer-links {
@@ -402,8 +408,8 @@ footer {
 }
 
 .footer-links a {
-    color: white;
-    font-size: clamp(16px, 3vw, 22px);
+    color:  #3E2723;
+    font-size: clamp(10px, 3vw, 20px);
 }
 
 /* Mobile */
