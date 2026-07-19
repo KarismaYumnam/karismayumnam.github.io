@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
 </head>
 
 <body>
@@ -17,12 +18,36 @@
 </header>
 
 <script src="/assets/js/navbar.js"></script>
-<section class="About">
-    <div class="container">
-        <h2>Blogs</h2>
-        <p>Welcome to our blog section! Here, we share insights, updates, and stories related to data science in agriculture, hydrology, and climate studies. Stay tuned for upcoming posts!</p>
-    </div>
-</section>
+<h2 class="t2">Stay up to date with the latest blog updates by following <a href="https://medium.com/@karismmayumnam">Data Insights with Karisma Yumnam</a>.</h2>
 
+<div class="layout">
+
+    <!-- Left chapter menu -->
+    <aside class="sidebar">
+        <h2>Scientific blogs</h2>
+
+        <nav id="chapter-list">
+            <button onclick="loadChapter('chapter1')">1 Introduction</button>
+            <button onclick="loadChapter('chapter2')">2 In progress..</button>
+            <button onclick="loadChapter('chapter3')">3 In progress...</button>
+        </nav>
+    </aside>
+
+    <!-- Center content -->
+    <main class="content" id="content">
+        <!-- Chapter content loads here -->
+    </main>
+
+    <!-- Right section menu -->
+    <aside class="toc">
+        <h3>Table of contents</h3>
+        <nav id="section-list">
+            <!-- Section links load here -->
+        </nav>
+    </aside>
+
+</div>
+
+<script src="/assets/js/blog.js"></script>
 <div id="footer"></div>
 <script src="/assets/js/footer.js"></script>

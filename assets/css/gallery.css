@@ -1,0 +1,85 @@
+/* =========================
+   Moving Photo Gallery
+========================= */
+
+.moving-gallery {
+    width: 100%;
+    padding: 45px 0;
+    background-color: #e7eceb;
+    overflow: hidden;
+}
+
+.gallery-title {
+    margin-bottom: 25px;
+    padding: 0 5%;
+    color: #046556;
+    font-size: clamp(26px, 4vw, 36px);
+    font-weight: 700;
+    text-align: center;
+}
+
+.gallery-window {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: move-gallery 33s linear infinite;
+}
+
+.gallery-track img {
+    width: 320px;
+    height: 220px;
+    flex-shrink: 0;
+
+    object-fit: contain;
+    background-color: #ffffff;
+
+    border-radius: 8px;
+}
+
+/* Pause movement when the user points at the gallery */
+.gallery-window:hover .gallery-track {
+    animation-play-state: paused;
+}
+
+@keyframes move-gallery {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .moving-gallery {
+        padding: 30px 0;
+    }
+
+    .gallery-track {
+        gap: 12px;
+        animation-duration: 22s;
+    }
+    .gallery-track img {
+        width: 240px;
+        height: 170px;
+        object-fit: contain;
+    }
+}
+
+/* Accessibility: disable animation when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+    .gallery-track {
+        animation: none;
+    }
+
+    .gallery-window {
+        overflow-x: auto;
+    }
+}
