@@ -29,6 +29,15 @@ const chapters = {
                     how different wavelengths interact with plant tissues. Light is an electromagnetic wave 
                     characterized by wavelength and frequency (see figure below). Our eyes can only perceive between 
                     0.4 to 0.7 microns, which is often referred to as the visible range.</p>
+                     <figure class="content-figure">
+                        <img
+                            src="images/Blogs/One/Fig1.png"
+                            alt="electromagnetic spectrum"
+                            class="figure-image"
+                        >
+    
+                    </figure>
+
                     <p>
                     This is a good example to reflect on a deeper philosophical question: Do we understand our 
                     experiences objectively, or do we understand it only through the limits of our existing 
@@ -51,6 +60,15 @@ const chapters = {
                     condition. This wavelength-dependent behavior gives rise to what we call a spectral signature 
                     (see figure below).
                     </p>
+                    <figure class="content-figure">
+                        <img
+                            src="images/Blogs/One/Fig2.png"
+                            alt="Spectral signature of vegetation"
+                            class="figure-image"
+                        >
+    
+                    </figure>
+
                     <p>
                     Plants generally exhibit high reflectance in the near-infrared region due to the internal 
                     structure of their leaves. In particular, the interfaces between air spaces and cells within 
