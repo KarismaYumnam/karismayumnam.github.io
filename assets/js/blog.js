@@ -1,27 +1,71 @@
 const chapters = {
     chapter1: {
-        title: "1 Introduction",
+        title: "What is the science behind vegetation indices?",
         sections: [
             {
-                id: "summary",
-                title: "Summary",
+                id: "context",
+                title: "Context",
                 content: `
-                    <p>This page is a blog currently in progress. All research projects and experiments conducted by Karisma Yumnam will be discussed in this page</p>
+                    <p>
+                    In various articles on remote sensing applications in agriculture, vegetation indices
+                    are among the most widely used types of data. Their formulas are usually presented in
+                    the papers, with the Normalized Difference Vegetation Index (NDVI) being one of the most widely
+                    used indices. Its formula is simple: the ratio of the difference between reflectance in the 
+                    near-infrared and red bands to the sum of reflectance in those two bands.</p>
+                    <p>
+                    But what exactly is NDVI? Is it merely a mathematical formula that captures crop growth, 
+                    health, and leaf area index, as scientists often suggest?
+                    </p>
                 `
             },
             {
-                id: "why-important",
-                title: "Why this Matters",
+                id: "basics",
+                title: "Basics of Light",
                 content: `
-                    <p> Sharing knowledge and experience with the world</p>
+                    <p> 
+                    To understand this, we first need to explore the physics of how light interacts with plants at 
+                    different wavelengths. We know that light has a dual nature—it exhibits both wave-like and 
+                    particle-like properties. In this context, we focus on the wave nature of light to understand 
+                    how different wavelengths interact with plant tissues. Light is an electromagnetic wave 
+                    characterized by wavelength and frequency (see figure below). Our eyes can only perceive between 
+                    0.4 to 0.7 microns, which is often referred to as the visible range.</p>
+                    <p>
+                    This is a good example to reflect on a deeper philosophical question: Do we understand our 
+                    experiences objectively, or do we understand it only through the limits of our existing 
+                    frameworks?</p>
                 `
             },
             {
-                id: "audience",
-                title: "Who This Chapter Is For",
+                id: "interraction",
+                title: "Light-Plant Interaction",
                 content: `
-                    <p>This chapter is useful for students, researchers, data scientists, 
-                    and practitioners who want to understand precision agriculture, data science, explainable AI, hydrology and meteorology.</p>
+                    <p>
+                    When light hits an object, it either reflects, absorbs or refracts. This signature of how much 
+                    in each category differs with different objects or conditions of the plants, and with different 
+                    wavelengths.</p>
+                    <p>
+                    When light strikes an object, part of it is reflected, absorbed, and transmitted through the 
+                    object. The proportions of reflected, absorbed, and transmitted light depend on the properties 
+                    of the object and the wavelength of light. In plants, these interactions change depending on 
+                    factors such as leaf structure, pigment concentration, water content, and physiological 
+                    condition. This wavelength-dependent behavior gives rise to what we call a spectral signature 
+                    (see figure below).
+                    </p>
+                    <p>
+                    Plants generally exhibit high reflectance in the near-infrared region due to the internal 
+                    structure of their leaves. In particular, the interfaces between air spaces and cells within 
+                    the spongy mesophyll cause substantial scattering of near-infrared light, some of which escapes 
+                    the leaf as reflected radiation. However, this reflectance is not constant. It varies depending 
+                    on the structural and physiological conditions of the plant, including whether the plant is 
+                    healthy, stressed, senescing, or dead.
+                    </p>
+                    <p>
+                    These differences in how plants reflect light at different wavelengths are what gave rise to 
+                    the concept of vegetation indices. The idea is simple: if plants reflect light differently 
+                    depending on their characteristics and conditions, can we use these differences to learn 
+                    something about them?
+                    </p>
+
                 `
             }
         ]
